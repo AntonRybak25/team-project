@@ -3,18 +3,23 @@
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 16px;
-    padding-right: 16px;
+    
 
     @media screen and (min-width: 480px) {
         width: 480px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     @media screen and (min-width:760px) {
         width: 760px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
