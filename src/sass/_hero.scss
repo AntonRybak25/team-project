@@ -5,8 +5,12 @@
   padding-bottom: 50px;
 
   background: #f5f5f5;
+<<<<<<< Updated upstream
 
   @media screen and (min-width: 768px) {
+=======
+  @media screen and(min-width: 768px) {
+>>>>>>> Stashed changes
     padding-bottom: 0;
   }
 }
@@ -16,12 +20,25 @@
 
   font-size: 28px;
   line-height: 1.17;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 44px;
+
+    font-size: 42px;
+    line-height: 120%;
+  }
 }
 .text {
   margin-bottom: 28px;
 
   font-size: 14px;
   line-height: 150%;
+  @media screen and(min-width: 768px) {
+    width: 336px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+  }
 }
 .button {
   width: 100px;
