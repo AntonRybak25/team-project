@@ -1,13 +1,13 @@
-@import './var';
-@import './placeholders';
+@import './base/base';
+@import './base/placeholders';
+@import './base/reset';
 @import './common';
-@import './base';
-@import './reset';
-@import './header';
-@import './hero';
-@import './offerings';
-@import './favorites';
-@import './customers';
-@import './subscribe';
-@import './footer';
+@import './componets/header';
+@import './componets/header';
+@import './componets/offerings';
+@import './componets/favorites';
+@import './componets/customers';
+@import './componets/subscribe';
+@import './componets/footer';
+@import './utils/var';
 
