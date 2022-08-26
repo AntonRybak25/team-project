@@ -8,6 +8,13 @@
     text-decoration: none;
 }
 
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -17,6 +24,8 @@ h6,
 p {
     margin: 0;
 }
+
+
 
 img {
     display: block;
