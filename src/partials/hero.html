@@ -12,9 +12,34 @@
     <button type="button" class="button">Order Now</button>
 
     <div class="slider">
-      <svg>
-        <use class="" href="./images/hero/icon-sprite .svg#icon-Ellipse"></use>
-      </svg>
+      <div class="slider__position">
+        <svg class="slider__iconEllipse" width="320" height="320">
+          <use href="./images/hero/icon-sprite .svg#icon-Ellipse"></use>
+        </svg>
+
+        <img
+          class="slider__img"
+          srcset="
+            ./images/hero/img/foto1-292.jpg 1x,
+            ./images/hero/img/foto1-584.jpg 2x
+          "
+          src="./images/hero/img/foto1-292.jpg"
+          alt="plate with food"
+          width="292"
+          height="292"
+        />
+        <button class="slider__iconVectorLeft" type="button">
+          <svg class="" width="11" height="20">
+            <use href="./images/hero/icon-sprite .svg#icon-Vector-left"></use>
+          </svg>
+        </button>
+
+        <button class="slider__iconVectorRight" type="button">
+          <svg width="11" height="20">
+            <use href="./images/hero/icon-sprite .svg#icon-Vector-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>
