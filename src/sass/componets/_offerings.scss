@@ -1,0 +1,269 @@
+.offerings__section {
+    max-width: 1280px;
+    background-image:
+        url(../images/offerings/Rectangle\ @1x_sm.png);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/offerings/Rectangle\ @2x_sm.png);
+    }
+
+    @media screen and(min-width: 768px) {
+        background-image:
+            url(../images/offerings/Rectangle\ @1x_md.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/offerings/Rectangle\ @2x_md.png);
+        }
+
+    @media screen and(min-width: 1200px) {
+            background-image:
+                url(../images/offerings/Rectangle\ @1x_lg.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/offerings/Rectangle\ @2x_lg.png);
+            }
+        }
+    }
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    padding-bottom: 60px;
+
+    margin: 0 auto;
+}
+
+.offerings__container {
+    padding-top: 41px;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 260px;
+    }
+
+    // tablet, desktop
+    // display: flex;
+}
+
+.apple-thumb {
+    display: flex;
+    width: 280px;
+    height: 309px;
+
+    &__mob {
+        width: 280px;
+        height: 280px;
+
+        margin: 0 auto;
+
+        background-image:
+            url(../images/offerings/aple@1x_sm.png);
+
+        background-position: bottom 41px center;
+
+        background-color: #FEFEFE;
+        border-radius: 50%;
+
+        // background-image:
+        //         url(../images/offerings/apple/apple@1x.png);
+        // url(../images/offerings/apple/Ellipse\ 4@1x.png),
+        // url(../images/offerings/apple/Ellipse\ 1@1x.png),
+        // url(../images/offerings/apple/Ellipse\ 2@1x.png);
+        // background-position: 
+        //     right 42px bottom 54px,
+        //     left 58px bottom 20px,
+        //     right 12px bottom 12px,
+        //     bottom;
+
+        // background-position: bottom 41px center;
+
+        // @media (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image:
+        //         url(../images/offerings/apple/apple@2x.png),
+        //         url(../images/offerings/apple/Ellipse\ 4@2x.png),
+        //         url(../images/offerings/apple/Ellipse\ 1@2x.png),
+        //         url(../images/offerings/apple/Ellipse\ 2@2x.png);
+        //     background-position:
+        //         right 42px bottom 54px,
+        //         left 58px bottom 20px,
+        //         right 12px bottom 12px,
+        //         bottom;
+        //     background-size: contain;
+        // }
+
+        background-repeat: no-repeat;
+    }
+}
+
+.special-offerings {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 28px;
+
+    @media screen and (min-width: 1200px) {
+        padding: 0;
+    }
+}
+
+.offerings {
+    // margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+        width: 526px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.2;
+
+        color: #2C2C2C;
+
+        @media screen and (min-width: 768px) {
+            font-size: 42px;
+            line-height: 1.2;
+        }
+
+        @media screen and (min-width: 1200px) {
+            line-height: 120%;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+
+        color: #2C2C2C;
+
+        margin-top: 20px;
+
+        @media screen and (min-width: 768px) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+
+        @media screen and (min-width: 1200px) {
+            line-height: 150%;
+        }
+    }
+}
+
+.special-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 116px;
+    }
+
+    @media screen and (min-width:1200px) {
+        gap: 67px;
+    }
+}
+
+.special-item {
+    margin-bottom: 28px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 252px;
+        margin: 0;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+
+        background-color: white;
+
+        margin-bottom: 8px;
+    }
+
+    &__icon {
+        fill: #7EB101;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 1200px) {
+            line-height: 140%;
+        }
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+
+        color: #2C2C2C;
+
+        @media screen and (min-width: 1200px) {
+            line-height: 150%;
+        }
+    }
+}
+
+.button-list {
+    display: flex;
+    gap: 24px;
+}
+
+.button-order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    width: 106px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #7EB101;
+
+    background-color: #FEFEFE;
+}
+
+.button-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0px;
+
+    position: absolute;
+    width: 100px;
+    height: 33px;
+
+    border: none;
+
+    background-color: inherit;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
