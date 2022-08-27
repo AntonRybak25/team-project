@@ -21,10 +21,10 @@
                 url(../images/offerings/Rectangle\ @2x_md.png);
         }
 
-    @media screen and(min-width: 1199px) {
+        @media screen and(min-width: 1199px) {
             background-image:
                 url(../images/offerings/Rectangle\ @1x_lg.png);
-    
+
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -46,11 +46,16 @@
 .offerings__container {
     padding-top: 41px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         display: flex;
         padding-top: 260px;
         gap: 90px;
-        margin: 0;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    @media screen and(min-width: 768px) and (max-width: 1280px) {
+        padding-top: 150px;
     }
 }
 
@@ -64,28 +69,22 @@
 
     margin: 0 auto;
 
-    // border: 0.5px solid black;
+    border: 0.5px solid black;
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
-        height: 394px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 550px;
-        height: 604px;
+    @media screen and(min-width: 768px) and (max-width: 1280px) {
+        margin: 0;
     }
 
     &__background {
-            position: absolute;
-            z-index: 1;
-            bottom: 12px;
+        position: absolute;
+        z-index: 1;
+        bottom: 12px;
 
-            width: 255px;
-            height: 255px;
-            border-radius: 50%;
-            background-color: #FEFEFE;
-        }
+        width: 255px;
+        height: 255px;
+        border-radius: 50%;
+        background-color: #FEFEFE;
+    }
 
     &__border {
         position: absolute;
@@ -96,7 +95,7 @@
         height: 280px;
         align-items: center;
         justify-content: center;
-        
+
         border-radius: 50%;
         border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
     }
@@ -105,17 +104,134 @@
         width: 201px;
         height: 309px;
 
-        // bottom: 53px;
-
         position: absolute;
         z-index: 3;
 
         background-image: url(../images/offerings/aple@1x_sm.png),
-                url(../images/offerings/Ellipse\ 4@1x_sm.png);
-        
-        background-position: center bottom 53px, center bottom 26px;
+            url(../images/offerings/Ellipse\ 4@1x_sm.png);
+
+        background-position: center bottom 53px, center bottom 16px;
         background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/offerings/aple@2x_sm.png),
+                url(../images/offerings/Ellipse\ 4@2x_sm.png);
         }
+
+        background-size: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 357px;
+        height: 394px;
+
+        &__background {
+            position: absolute;
+            z-index: 1;
+            bottom: 16px;
+
+            width: 325px;
+            height: 325px;
+            border-radius: 50%;
+            background-color: #FEFEFE;
+        }
+
+        &__border {
+            position: absolute;
+            z-index: 2;
+
+            display: flex;
+            width: 357px;
+            height: 357px;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+
+        &__apple {
+            width: 257px;
+            height: 400px;
+
+            position: absolute;
+            z-index: 3;
+
+            background-image: url(../images/offerings/aple@1x_md.png),
+                url(../images/offerings/Ellipse\ 4@1x_md.png);
+
+            background-position: center bottom 68px, center bottom 20px;
+            background-repeat: no-repeat;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/offerings/aple@2x_md.png),
+                    url(../images/offerings/Ellipse\ 4@2x_md.png);
+            }
+
+            background-size: 100%;
+        }
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 550px;
+        height: 604px;
+
+        &__background {
+            position: absolute;
+            z-index: 1;
+            bottom: 24px;
+
+            width: 502px;
+            height: 502px;
+            border-radius: 50%;
+            background-color: #FEFEFE;
+        }
+
+        &__border {
+            position: absolute;
+            z-index: 2;
+
+            display: flex;
+            width: 550px;
+            height: 550px;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
+        }
+
+        &__apple {
+            width: 396px;
+            height: 560px;
+
+            position: absolute;
+            z-index: 3;
+
+            background-image: url(../images/offerings/aple@1x_lg.png),
+                url(../images/offerings/Ellipse\ 4@1x_lg.png);
+
+            background-position: center bottom 102px, center bottom 26px;
+            background-repeat: no-repeat;
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/offerings/aple@2x_lg.png),
+                    url(../images/offerings/Ellipse\ 4@2x_lg.png);
+            }
+
+            background-size: 100%;
+        }
+    }
 }
 
 .special-offerings {
@@ -124,8 +240,8 @@
     padding-top: 60px;
     gap: 28px;
 
-    @media screen and (min-width: 1200px) {
-        // padding: 0;
+    @media screen and (min-width: 1280px) {
+        padding: 0;
     }
 }
 
@@ -148,7 +264,7 @@
             line-height: 1.2;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             line-height: 120%;
         }
     }
@@ -168,7 +284,7 @@
             line-height: 1.2;
         }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             line-height: 150%;
         }
     }
@@ -180,7 +296,7 @@
         gap: 116px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         gap: 67px;
     }
 }
@@ -221,7 +337,7 @@
 
         margin-bottom: 16px;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             line-height: 140%;
         }
     }
@@ -233,7 +349,7 @@
 
         color: #2C2C2C;
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             line-height: 150%;
         }
     }
@@ -274,7 +390,7 @@
 
     background-color: inherit;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         display: none;
     }
 }
