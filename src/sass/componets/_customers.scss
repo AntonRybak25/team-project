@@ -1,14 +1,20 @@
 .customers {
     padding: 60px 0;
 
-    background-color: #FFE550;
+    background-image: url(../images/customers/customers-bg_mb.png);
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
 
     @media screen and (min-width: 768px) {
         padding-bottom: 120px;
+        background-image: url(../images/customers/customers-bg_tb.png);
     }
 
     @media screen and (min-width: 1280px) {
         padding-bottom: 200px;
+        background-image: url(../images/customers/customers-bg_dt.png);
     }
 }
 
@@ -122,7 +128,7 @@
 
 .thumb__desc {
     padding-right: 14px;
-    border-right: 0.854167px solid #7EB101;
+    border-right: 1px solid var(--dark-green);
 }
 
 .client__title {
