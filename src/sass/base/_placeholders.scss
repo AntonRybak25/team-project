@@ -18,11 +18,15 @@
         width: 768px;
         padding-left: 32px;
         padding-right: 32px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 1280px) {
         width: 1280px;
         padding-left: 16px;
         padding-right: 16px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
