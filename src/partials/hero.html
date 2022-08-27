@@ -1,45 +1,45 @@
 <!-- Igor Sokol -->
 <section class="hero">
   <div class="container">
-    <h1 class="title">Enjoy Your Favorite Food From Anywhere</h1>
+    <div class="info">
+      <h1 class="title">Enjoy Your Favorite Food From Anywhere</h1>
 
-    <p class="text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
+      <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
 
-    <button type="button" class="button">Order Now</button>
+      <button type="button" class="button">Order Now</button>
+    </div>
 
     <div class="slider">
-      <div class="slider__position">
-        <svg class="slider__iconEllipse" width="320" height="320">
-          <use href="./images/hero/icon-sprite .svg#icon-Ellipse"></use>
+      <img
+        class="slider__img"
+        srcset="
+          ./images/hero/img/foto1-292.jpg   292w,
+          ./images/hero/img/foto1-528.jpg   528w,
+          ./images/hero/img/foto1-584.jpg   584w,
+          ./images/hero/img/foto1-1056.jpg 1056w
+        "
+        src="./images/hero/img/foto1-292.jpg"
+        sizes="
+                (min-width: 1200px) 528px, 
+                (min-width: 768px) 292px, 100vw"
+        alt="plate with food"
+      />
+
+      <button class="slider__iconVectorLeft" type="button">
+        <svg class="iconVector" width="11" height="20">
+          <use href="./images/hero/iconSprite.svg#icon-VectorLeft"></use>
         </svg>
+      </button>
 
-        <img
-          class="slider__img"
-          srcset="
-            ./images/hero/img/foto1-292.jpg 1x,
-            ./images/hero/img/foto1-584.jpg 2x
-          "
-          src="./images/hero/img/foto1-292.jpg"
-          alt="plate with food"
-          width="292"
-          height="292"
-        />
-        <button class="slider__iconVectorLeft" type="button">
-          <svg class="" width="11" height="20">
-            <use href="./images/hero/icon-sprite .svg#icon-Vector-left"></use>
-          </svg>
-        </button>
-
-        <button class="slider__iconVectorRight" type="button">
-          <svg width="11" height="20">
-            <use href="./images/hero/icon-sprite .svg#icon-Vector-right"></use>
-          </svg>
-        </button>
-      </div>
+      <button class="slider__iconVectorRight" type="button">
+        <svg class="iconVector" width="11" height="20">
+          <use href="./images/hero/iconSprite.svg#icon-VectorRight"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
