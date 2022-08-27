@@ -1,0 +1,164 @@
+.hero {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  @media screen and(min-width: 768px) {
+    padding-bottom: 0;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 159px;
+  }
+}
+
+.title {
+  margin-bottom: 28px;
+
+  font-size: 28px;
+  line-height: 1.17;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 44px;
+
+    font-size: 42px;
+    line-height: 120%;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 502px;
+    font-size: 48px;
+  }
+}
+.text {
+  margin-bottom: 28px;
+
+  font-size: 14px;
+  line-height: 150%;
+  @media screen and(min-width: 768px) {
+    width: 336px;
+    margin-bottom: 40px;
+
+    font-size: 16px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 502px;
+  }
+}
+.button {
+  width: 100px;
+  height: 32px;
+  background: #bbf330;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+
+  font-size: 14px;
+  line-height: 150%;
+
+  &:hover,
+  &:focus {
+    background: #b5ff00;
+  }
+}
+
+.slider {
+  display: none;
+
+  @media screen and(min-width:768px) {
+    position: absolute;
+    display: flex;
+    top: 149px;
+    right: 40px;
+
+    width: 320px;
+    height: 320px;
+
+    border: 14px solid #ffe550;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+      border: 14px solid #bbf330;
+    }
+    &__img {
+      border-radius: 50%;
+    }
+
+    &__iconVectorLeft {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 50%;
+      left: -25px;
+      transform: translateY(-50%);
+      z-index: 14;
+      width: 34px;
+      height: 28px;
+      padding: 0;
+
+      border: none;
+      background: #ffffff;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+      border-radius: 4px;
+
+      cursor: pointer;
+    }
+
+    &__iconVectorRight {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      top: 50%;
+      right: -25px;
+      transform: translateY(-50%);
+      z-index: 15;
+      width: 34px;
+      height: 28px;
+      padding: 0;
+      cursor: pointer;
+
+      border: none;
+      background: #ffffff;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+      border-radius: 4px;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    top: 14px;
+    right: 30px;
+    width: 580px;
+    height: 580px;
+
+    border: 26px solid #ffe550;
+
+    &:hover,
+    &:focus {
+      border: 26px solid #bbf330;
+    }
+
+    &__iconVectorLeft {
+      width: 48px;
+      height: 40px;
+
+      left: -40px;
+    }
+
+    &__iconVectorRight {
+      width: 48px;
+      height: 40px;
+
+      right: -40px;
+    }
+  }
+}
+.iconVector {
+  @media screen and(min-width: 1200px) {
+    width: 17px;
+    height: 29px;
+  }
+}
