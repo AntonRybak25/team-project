@@ -1,24 +1,36 @@
 .offerings__section {
     max-width: 1280px;
     background-image:
-        url(../images/offerings/background/Rectangle\ @1x_sm.png);
+        url(../images/offerings/Rectangle\ @1x_sm.png);
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image:
-            url(../images/offerings/background/Rectangle\ @2x_sm.png);
+            url(../images/offerings/Rectangle\ @2x_sm.png);
     }
 
     @media screen and(min-width: 768px) {
         background-image:
-            url(../images/offerings/background/Rectangle\ @1x_md.png);
+            url(../images/offerings/Rectangle\ @1x_md.png);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image:
-                url(../images/offerings/background/Rectangle\ @2x_md.png);
+                url(../images/offerings/Rectangle\ @2x_md.png);
+        }
+
+    @media screen and(min-width: 1200px) {
+            background-image:
+                url(../images/offerings/Rectangle\ @1x_lg.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/offerings/Rectangle\ @2x_lg.png);
+            }
         }
     }
 
@@ -55,7 +67,7 @@
         margin: 0 auto;
 
         background-image:
-            url(../images/offerings/apple/apple@1x.png);
+            url(../images/offerings/aple@1x_sm.png);
 
         background-position: bottom 41px center;
 
@@ -75,21 +87,21 @@
 
         // background-position: bottom 41px center;
 
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image:
-                url(../images/offerings/apple/apple@2x.png),
-                url(../images/offerings/apple/Ellipse\ 4@2x.png),
-                url(../images/offerings/apple/Ellipse\ 1@2x.png),
-                url(../images/offerings/apple/Ellipse\ 2@2x.png);
-            background-position:
-                right 42px bottom 54px,
-                left 58px bottom 20px,
-                right 12px bottom 12px,
-                bottom;
-            background-size: contain;
-        }
+        // @media (min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     background-image:
+        //         url(../images/offerings/apple/apple@2x.png),
+        //         url(../images/offerings/apple/Ellipse\ 4@2x.png),
+        //         url(../images/offerings/apple/Ellipse\ 1@2x.png),
+        //         url(../images/offerings/apple/Ellipse\ 2@2x.png);
+        //     background-position:
+        //         right 42px bottom 54px,
+        //         left 58px bottom 20px,
+        //         right 12px bottom 12px,
+        //         bottom;
+        //     background-size: contain;
+        // }
 
         background-repeat: no-repeat;
     }
