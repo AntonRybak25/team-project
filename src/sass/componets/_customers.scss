@@ -1,0 +1,146 @@
+.customers {
+    padding: 60px 0;
+
+    background-image: url(../images/customers/customers-bg_mb.png);
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 120px;
+        background-image: url(../images/customers/customers-bg_tb.png);
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 200px;
+        background-image: url(../images/customers/customers-bg_dt.png);
+    }
+}
+
+.customers__container {
+    @media screen and (min-width: 1280px) {
+        margin: 0;
+    }
+}
+
+
+.customers__title {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 1.17;
+
+    @media screen and (max-width: 767px) {
+        max-width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.16;
+    }
+}
+
+.customers__text {
+    font-size: 14px;
+    line-height: 1.14;
+
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.18;
+    }
+}
+
+.thumb {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 139px;
+
+    }
+}
+
+.customers__thumb {
+
+    padding: 8px;
+
+    background-color: #ffffff;
+    border-radius: 0 30px 30px 30px;
+
+    @media screen and (min-width: 768px) {
+        padding: 12px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 18px;
+        max-width: 501px;
+    }
+}
+
+.customers__thumb:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+
+
+}
+
+.customers__list {
+    display: inline-flex;
+    gap: 4px;
+
+    margin-bottom: 28px;
+}
+
+.customers__svg {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+.customers__desc {
+    margin-bottom: 40px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.18;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.16;
+    }
+}
+
+.client {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.thumb__desc {
+    padding-right: 14px;
+    border-right: 1px solid var(--dark-green);
+}
+
+.client__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.client__text {
+    font-size: 14px;
+    line-height: 150%;
+}
+
+
+
