@@ -1,8 +1,9 @@
 .footer {
     padding-top: 64px;
-    padding-bottom: 60px;
-    background-repeat: no-repeat;
+    padding-bottom: 60px; 
+    background-repeat: no-repeat;   
     background-size: contain;
+
 
     @media screen and (max-width: 768px) {
         background-size: 116px, 253px, 104px;
@@ -14,10 +15,11 @@
         background-image: url(../images/footer/footerapple@2x_mobile.png), url(../images/footer/footerbcgr@2x_mobile.png), url(../images/footer/footerorange@2x_mobile.png);
         }  
     }
-      
+ 
     @media screen and (min-width:768px) {
         padding-top: 100px;
         padding-bottom: 100px;
+        background-size: contain;
         background-position: bottom center;
         background-image: url(../images/footer/footerbcgr@1x_tablet.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -26,6 +28,7 @@
     }
 
     @media screen and (min-width: 1280px) {
+        background-size: 1280px;
         background-image: url(../images/footer/footerbcgr@1x_desktop.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
          background-image: url(../images/footer/footerbcgr@2x_desktop.png);
@@ -95,11 +98,19 @@
         gap: 12px;
         margin-bottom: 0; 
     }
+    @media screen and (min-width:1200px) {
+        display: inline-block;
+        margin-right: 13px;
+    }
    
 }
 .subscribe-footer__title {
     @media screen and (min-width:768px) {
         margin-right: 450px; 
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 0;
+        margin-bottom: 12px; 
     }
 }
 
@@ -153,6 +164,7 @@
 }
 .warning-icon,
 .warning-notfication {
+    fill: #FF705D;
     position: absolute;
     top: 75px;
     left: 5px;
@@ -185,6 +197,7 @@
     }
     @media screen and (min-width: 1280px) {
         margin-right: 0;
+        margin-bottom: 12px;
     }
 
 &:hover,
@@ -209,21 +222,25 @@
 }
 }
 .footer-addinfo {
-    padding-bottom: 50px;
+  
 
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
         align-items: baseline;
-        padding-bottom: 0;  
+          
     }
     
 &__list { 
     display: flex;
     gap: 32px;
-    padding-bottom: 46px;
+    margin-bottom: 40px;
     justify-content: space-around;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
 }
 &__link {
     font-weight: 400;
