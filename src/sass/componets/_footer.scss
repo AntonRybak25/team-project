@@ -75,7 +75,7 @@
        margin-bottom: 0; 
     }
     @media screen and (min-width: 1280px) {
-        margin-right: 150px;
+        margin-right: 210px;
     }
 }
 .footer-nav__link {
@@ -109,7 +109,7 @@
         margin-right: 450px; 
     }
     @media screen and (min-width:1280px) {
-        margin-right: 0;
+        margin-right: auto;
         margin-bottom: 12px; 
     }
 }
@@ -131,6 +131,9 @@
 
     @media screen and (min-width:768px) {
         width: 279px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 13px;    
     }
 
 &:hover,
@@ -196,7 +199,7 @@
         margin-right: 100px;
     }
     @media screen and (min-width: 1280px) {
-        margin-right: 0;
+        margin-right: auto;
         margin-bottom: 12px;
     }
 
@@ -219,6 +222,7 @@
 
 &__link {
     color: #7EB101;
+    text-decoration: underline;
 }
 }
 .footer-addinfo {
@@ -247,6 +251,7 @@
     font-size: 9px;
     line-height: calc(12/10);
     color: #7EB101;
+    text-decoration: underline;
 
     @media screen and (min-width:768px) {
         font-size: 12px;
