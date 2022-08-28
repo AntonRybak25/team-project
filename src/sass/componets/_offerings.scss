@@ -41,8 +41,6 @@
     background-position: top;
 
     padding-bottom: 60px;
-
-    // margin: 0 auto;
 }
 
 .offerings__container {
@@ -64,7 +62,6 @@
 .apple {
     display: flex;
     align-items: flex-end;
-    // align-content: center;
 }
 
 .apple-thumb {
@@ -76,8 +73,6 @@
     position: relative;
 
     margin: 0 auto;
-
-    // border: 0.5px solid black;
 
     @media screen and(min-width: 768px) and (max-width: 1280px) {
         margin: 0;
@@ -92,21 +87,24 @@
         height: 255px;
         border-radius: 50%;
         background-color: #FEFEFE;
+
+        outline: 3px solid rgba(255, 255, 255, 0.5);
+        outline-offset: 12px;
     }
 
-    &__border {
-        position: absolute;
-        z-index: 2;
+    // &__border {
+    //     position: absolute;
+    //     z-index: 2;
 
-        display: flex;
-        width: 280px;
-        height: 280px;
-        align-items: center;
-        justify-content: center;
+    //     display: flex;
+    //     width: 280px;
+    //     height: 280px;
+    //     align-items: center;
+    //     justify-content: center;
 
-        border-radius: 50%;
-        border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
-    }
+    //     border-radius: 50%;
+    //     border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
+    // }
 
     &__apple {
         width: 201px;
@@ -155,21 +153,24 @@
             height: 325px;
             border-radius: 50%;
             background-color: #FEFEFE;
+
+            outline: 3px solid rgba(255, 255, 255, 0.5);
+            outline-offset: 16px;
         }
 
-        &__border {
-            position: absolute;
-            z-index: 2;
+        // &__border {
+        //     position: absolute;
+        //     z-index: 2;
 
-            display: flex;
-            width: 357px;
-            height: 357px;
-            align-items: center;
-            justify-content: center;
+        //     display: flex;
+        //     width: 357px;
+        //     height: 357px;
+        //     align-items: center;
+        //     justify-content: center;
 
-            border-radius: 50%;
-            border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
-        }
+        //     border-radius: 50%;
+        //     border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
+        // }
 
         &__apple {
             width: 257px;
@@ -219,21 +220,24 @@
             height: 502px;
             border-radius: 50%;
             background-color: #FEFEFE;
+
+            outline: 3px solid rgba(255, 255, 255, 0.5);
+            outline-offset: 24px;
         }
 
-        &__border {
-            position: absolute;
-            z-index: 2;
+        // &__border {
+        //     position: absolute;
+        //     z-index: 2;
 
-            display: flex;
-            width: 550px;
-            height: 550px;
-            align-items: center;
-            justify-content: center;
+        //     display: flex;
+        //     width: 550px;
+        //     height: 550px;
+        //     align-items: center;
+        //     justify-content: center;
 
-            border-radius: 50%;
-            border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
-        }
+        //     border-radius: 50%;
+        //     border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
+        // }
 
         &__apple {
             width: 396px;
