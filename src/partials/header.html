@@ -5,11 +5,41 @@
           <use href="./images/icon.svg#logo"></use>
         </svg>
       </a>
-      <button class="menu-btn" type="button" data-menu-open>
-        <svg width="28" height="28">
-          <use href="./images/icon.svg#icon-gg_menu"></use>
+      <button class="menu-btn is-open" 
+      aria-expanded="false"
+      aria-controls="menu-container"
+      type="button" 
+      data-menu-button>
+        <svg 
+        width="28" 
+        height="28"
+        aria-label="Switch Menu"> 
+        <use class="icon-menu" href="./images/icon.svg#icon-gg_menu"></use>
+        <use class="icon-cross" href="./images/icon.svg#icon-close"></use>
+          
         </svg>
       </button>
+
+<div class="menu-container" id="menu-container" data-menu>
+
+  <ul class="mobile-nav list">
+    <li class="mobile-nav-item">
+      <a href="" class="mobile-link line">Home</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="" class="mobile-link line">About</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="" class="mobile-link line">Service</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="" class="mobile-link line">Menu</a>
+    </li>
+    <li class="mobile-nav-item">
+      <a href="" class="mobile-link line">Contact</a>
+    </li>
+  </ul>
+</div>
 
       <nav class="nav">
         <ul class="nav__list list">
