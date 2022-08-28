@@ -1,13 +1,11 @@
 .footer {
     padding-top: 64px;
     padding-bottom: 60px;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 
     @media screen and (max-width: 768px) {
         background-size: 116px, 253px, 104px;
-        background-repeat: no-repeat;
         background-position: top 132px left, bottom center, right top;
         background-image: url(../images/footer/footerapple1x_mobile.png),
         url(../images/footer/footerbcgr@1x_mobile.png),
@@ -17,13 +15,10 @@
         }  
     }
       
-    
-    
-
     @media screen and (min-width:768px) {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-size: contain;
+        background-position: bottom center;
         background-image: url(../images/footer/footerbcgr@1x_tablet.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/footer/footerbcgr@2x_tablet.png);
@@ -31,7 +26,6 @@
     }
 
     @media screen and (min-width: 1280px) {
-        background-position: bottom center; 
         background-image: url(../images/footer/footerbcgr@1x_desktop.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
          background-image: url(../images/footer/footerbcgr@2x_desktop.png);
