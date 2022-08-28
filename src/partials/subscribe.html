@@ -1,5 +1,25 @@
 <section class="subscribe">
 <div class="container subscribe__container">
+
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      srcset="./images/subscribe/banan@1x_lg.jpg 1x, ./images/subscribe/banan@2x_lg.jpg 2x"
+    />
+
+    <source
+      media="(min-width: 768px)"
+      srcset="./images/subscribe/banan@1x_md.jpg 1x, ./images/subscribe/banan@2x_md.jpg 2x"
+    />
+
+    <source
+      media="(max-width: 767px)"
+      srcset="./images/subscribe/banan@1x_sm.jpg 1x, ./images/subscribe/banan@2x_sm.jpg 2x"
+    />
+
+    <img class="banana-img" src="./images/subscribe/banan@1x_sm.jpg" alt="Banana" />
+  </picture>
+<!--
   <img
   class="banana-img"
   src="./images/subscribe/banan (1).jpg"
@@ -7,6 +27,8 @@
   width="280"
   height="78"
 />
+
+-->
 <div class="subscribe__left-side" >
     <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
     <p class="subscribe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim 
@@ -14,7 +36,7 @@
 
         <label class="subscribe-form-wrap">
       
-              <input class="subscribe-form-input" type="email" placeholder="Enter your email"/>
+              <input class="subscribe-form-input" type="email" required placeholder="Enter your email"/>
             
             </label>
       
@@ -23,13 +45,21 @@
       </div>    
       <div>
        <ul>
-        <img
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/subscribe/banan@1x_lg.jpg 1x, ./images/subscribe/banan@2x_lg.jpg 2x"
+          />
+          <img class="banana-img-desktop" src="./images/subscribe/banan@1x_lg.jpg" alt="Banana" />
+        </picture>
+ <!--       <img
         class="banana-img-desktop"
         src="./images/subscribe/banan (1).jpg"
         alt="<Banana>"
         width="600"
         height="266"
       />
+    --> 
     </ul>
       </div>
 </div>

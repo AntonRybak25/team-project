@@ -114,3 +114,12 @@
         display: none;
     }
   }
+
+
+  .subscribe-form-input:not(:placeholder-shown):required:valid {
+    border-color:  #7EB101;
+ 
+&:not(:placeholder-shown):required:invalid {
+    border-color: #FF705D;
+    }
+}
