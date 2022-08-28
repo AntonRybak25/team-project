@@ -1,9 +1,7 @@
 .footer {
     padding-top: 64px;
-    padding-bottom: 60px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    padding-bottom: 60px; 
+    background-repeat: no-repeat;   
 
     @media screen and (max-width: 768px) {
         background-size: 116px, 253px, 104px;
@@ -16,14 +14,12 @@
         background-image: url(../images/footer/footerapple@2x_mobile.png), url(../images/footer/footerbcgr@2x_mobile.png), url(../images/footer/footerorange@2x_mobile.png);
         }  
     }
-      
-    
-    
-
+         
     @media screen and (min-width:768px) {
         padding-top: 100px;
         padding-bottom: 100px;
         background-size: contain;
+        background-position: bottom center; 
         background-image: url(../images/footer/footerbcgr@1x_tablet.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url(../images/footer/footerbcgr@2x_tablet.png);
