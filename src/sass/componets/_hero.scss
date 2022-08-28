@@ -48,7 +48,7 @@
 .button {
   width: 100px;
   height: 32px;
-  background: #bbf330;
+  background: var(--green);
   border-radius: 30px;
   border: none;
   cursor: pointer;
@@ -58,7 +58,7 @@
 
   &:hover,
   &:focus {
-    background: #b5ff00;
+    background: var(--green-hover);
   }
 }
 
@@ -74,12 +74,12 @@
     width: 320px;
     height: 320px;
 
-    border: 14px solid #ffe550;
+    border: 14px solid var(--default-yellow);
     border-radius: 50%;
 
     &:hover,
     &:focus {
-      border: 14px solid #bbf330;
+      border: 14px solid var(--green);
     }
     &__img {
       border-radius: 50%;
@@ -99,12 +99,16 @@
       padding: 0;
 
       border: none;
-      background: #ffffff;
+      background: var(--white);
 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
       border-radius: 4px;
 
       cursor: pointer;
+      &:hover,
+      &:focus {
+        stroke: var(--dark-green);
+      }
     }
 
     &__iconVectorRight {
@@ -123,23 +127,27 @@
       cursor: pointer;
 
       border: none;
-      background: #ffffff;
+      background: var(--white);
 
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
       border-radius: 4px;
+      &:hover,
+      &:focus {
+        stroke: var(--dark-green);
+      }
     }
   }
 
   @media screen and(min-width: 1280px) {
-    top: -150px;
+    top: -145px;
     width: 580px;
     height: 580px;
 
-    border: 26px solid #ffe550;
+    border: 26px solid var(--default-yellow);
 
     &:hover,
     &:focus {
-      border: 26px solid #bbf330;
+      border: 26px solid var(--green);
     }
 
     &__iconVectorLeft {
@@ -158,10 +166,6 @@
   }
 }
 .iconVector {
-  &:hover,
-  &:focus {
-    fill: #7eb101;
-  }
   @media screen and(min-width: 1280px) {
     width: 17px;
     height: 29px;
