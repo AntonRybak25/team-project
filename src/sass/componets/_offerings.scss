@@ -23,7 +23,7 @@
                 url(../images/offerings/Rectangle\ @2x_md.png);
         }
 
-        @media screen and(min-width: 1199px) {
+        @media screen and(min-width: 1280px) {
             background-image:
                 url(../images/offerings/Rectangle\ @1x_lg.png);
 
@@ -63,8 +63,8 @@
 
 .apple {
     display: flex;
-    align-items: center;
-    align-content: center;
+    align-items: flex-end;
+    // align-content: center;
 }
 
 .apple-thumb {
@@ -110,26 +110,36 @@
 
     &__apple {
         width: 201px;
-        height: 309px;
+        height: 255px;
+        margin-bottom: 53px;
 
         position: absolute;
-        z-index: 3;
+        z-index: 4;
 
-        background-image: url(../images/offerings/aple@1x_sm.png),
-            url(../images/offerings/Ellipse\ 4@1x_sm.png);
+        background-image: url(../images/offerings/aple@1x_sm.png);
 
-        background-position: center bottom 53px, center bottom 16px;
         background-repeat: no-repeat;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image:
-                url(../images/offerings/aple@2x_sm.png),
-                url(../images/offerings/Ellipse\ 4@2x_sm.png);
+                url(../images/offerings/aple@2x_sm.png);
         }
 
         background-size: 100%;
+    }
+
+    &__shadow {
+        width: 128px;
+        height: 44px;
+        margin-bottom: 38px;
+    
+        background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+        filter: blur(16.8764px);
+    
+        position: absolute;
+        z-index: 3;
     }
 
     @media screen and (min-width: 768px) {
@@ -163,28 +173,37 @@
 
         &__apple {
             width: 257px;
-            height: 400px;
+            height: 325px;
+            margin-bottom: 68px;
 
             position: absolute;
-            z-index: 3;
+            z-index: 4;
 
-            background-image: url(../images/offerings/aple@1x_md.png),
-                url(../images/offerings/Ellipse\ 4@1x_md.png);
+            background-image: url(../images/offerings/aple@1x_md.png);
 
-            background-position: center bottom 68px, center bottom 20px;
             background-repeat: no-repeat;
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image:
-                    url(../images/offerings/aple@2x_md.png),
-                    url(../images/offerings/Ellipse\ 4@2x_md.png);
+                    url(../images/offerings/aple@2x_md.png);
             }
 
             background-size: 100%;
         }
 
+        &__shadow {
+            width: 164px;
+            height: 56px;
+            margin-bottom: 49px;
+
+            background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+                filter: blur(16.8764px);
+
+            position: absolute;
+            z-index: 3;
+        }
     }
 
     @media screen and (min-width: 1280px) {
@@ -218,26 +237,36 @@
 
         &__apple {
             width: 396px;
-            height: 560px;
+            height: 502px;
+            margin-bottom: 102px;
 
             position: absolute;
-            z-index: 3;
+            z-index: 4;
 
-            background-image: url(../images/offerings/aple@1x_lg.png),
-                url(../images/offerings/Ellipse\ 4@1x_lg.png);
+            background-image: url(../images/offerings/aple@1x_lg.png);
 
-            background-position: center bottom 102px, center bottom 26px;
             background-repeat: no-repeat;
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image:
-                    url(../images/offerings/aple@2x_lg.png),
-                    url(../images/offerings/Ellipse\ 4@2x_lg.png);
+                    url(../images/offerings/aple@2x_lg.png);
             }
 
             background-size: 100%;
+        }
+
+        &__shadow {
+            width: 252px;
+            height: 87px;
+            margin-bottom: 75px;
+
+            background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+                filter: blur(16.8764px);
+
+            position: absolute;
+            z-index: 3;
         }
     }
 }
@@ -250,6 +279,7 @@
     width: 166px;
     height: 211px;
     margin-left: 28px;
+    margin-bottom: 68px;
 
     background-image: url(../images/offerings/Apple@1x_md.png);
 
@@ -269,6 +299,7 @@
     width: 108px;
     height: 136px;
     margin-left: 44px;
+    margin-bottom: 68px;
 
     background-image: url(../images/offerings/Apple@1x_md_1.png);
     
@@ -292,7 +323,6 @@
 }
 
 .offerings {
-    // margin-bottom: 28px;
 
     @media screen and (min-width: 768px) {
         width: 526px;
