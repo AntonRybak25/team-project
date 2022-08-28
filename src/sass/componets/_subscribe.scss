@@ -1,0 +1,116 @@
+.subscribe{
+    width: 100%; 
+    
+}
+.subscribe__container{ 
+    display: inline-block;
+        
+        @media screen and (min-width: 1200px) {
+          display: flex;
+            
+        }
+      
+}
+
+.subscribe__left-side {
+  
+    @media screen and (min-width: 1200px) {
+      flex-basis: 656px;
+    }
+  }
+
+.subscribe__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.21;
+
+    @media screen and (max-width: 767px) {
+        max-width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+        line-height: 1.23;
+    }
+}
+
+.subscribe__text {
+    font-size: 14px;
+    line-height: 1.14;
+
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 767px) {
+        max-width: 656px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.18;
+    }
+}
+
+  .subscribe__btn{
+    display: block;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;
+        margin-left: 32px;
+    }
+
+  padding: 11px 22px;
+
+  font-weight: 500;
+    font-size: 13px;
+    line-height: 1.53;
+
+    color: #2C2C2C;
+  }
+
+  .subscribe-form-wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        display: inline-block;}
+
+  }
+  
+  .subscribe-form-input {
+    width: 100%;
+    
+    @media screen and (min-width: 768px) {
+      width: 395px;
+  }
+    border: 0.854167px solid #FFE550;
+    padding: 12px;
+    border-radius: 30px;
+  
+    outline: transparent;
+  }
+  
+  .banana-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+
+    @media screen and (min-width: 780px) {
+        margin-right: 0;
+        width:281px;
+       
+        height:136px;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+  }
+
+  .banana-img-desktop{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+  }
