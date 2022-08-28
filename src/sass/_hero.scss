@@ -1,5 +1,4 @@
 .hero {
-  position: relative;
   padding-top: 60px;
   padding-bottom: 50px;
 
@@ -9,6 +8,9 @@
   @media screen and(min-width: 1280px) {
     padding-top: 159px;
   }
+}
+.pagaHero {
+  position: relative;
 }
 
 .title {
@@ -66,8 +68,8 @@
   @media screen and(min-width:768px) {
     position: absolute;
     display: flex;
-    top: 149px;
-    right: 40px;
+    top: 89px;
+    right: 0px;
 
     width: 320px;
     height: 320px;
@@ -129,8 +131,7 @@
   }
 
   @media screen and(min-width: 1280px) {
-    top: 14px;
-    right: 30px;
+    top: -150px;
     width: 580px;
     height: 580px;
 
@@ -157,6 +158,10 @@
   }
 }
 .iconVector {
+  &:hover,
+  &:focus {
+    fill: #7eb101;
+  }
   @media screen and(min-width: 1280px) {
     width: 17px;
     height: 29px;
