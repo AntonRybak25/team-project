@@ -61,6 +61,12 @@
     }
 }
 
+.apple {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
 .apple-thumb {
     display: flex;
     width: 280px;
@@ -71,7 +77,7 @@
 
     margin: 0 auto;
 
-    border: 0.5px solid black;
+    // border: 0.5px solid black;
 
     @media screen and(min-width: 768px) and (max-width: 1280px) {
         margin: 0;
@@ -234,6 +240,44 @@
             background-size: 100%;
         }
     }
+}
+
+.apple-tablet-md {
+    @media screen and (max-width: 768px), (min-width: 1280px) {
+        display: none;
+    }
+
+    width: 166px;
+    height: 211px;
+    margin-left: 28px;
+
+    background-image: url(../images/offerings/Apple@1x_md.png);
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/offerings/Apple@2x_md.png);
+        }
+}
+
+.apple-tablet-sm {
+    @media screen and (max-width: 768px), (min-width: 1280px) {
+            display: none;
+        }
+
+    width: 108px;
+    height: 136px;
+    margin-left: 44px;
+
+    background-image: url(../images/offerings/Apple@1x_md_1.png);
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/offerings/Apple@2x_md_1.png);
+        }
 }
 
 .special-offerings {
