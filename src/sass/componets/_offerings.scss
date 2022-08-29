@@ -405,13 +405,18 @@
         height: 48px;
         border-radius: 50%;
 
-        background-color: white;
+        background-color: #FEFEFE;
 
         margin-bottom: 8px;
     }
 
     &__icon {
         fill: #7EB101;
+        }
+
+    &__icon:hover { 
+        fill: #597D00;
+        transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__title {
@@ -457,6 +462,11 @@
     border: 2px solid #7EB101;
 
     background-color: #FEFEFE;
+
+    &:hover {
+        border-color: #597D00;
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .button-more {
@@ -478,3 +488,51 @@
         display: none;
     }
 }
+
+// Modal Form
+
+// .backdrop {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 100;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     width: 100%;
+//     height: 100%;
+
+//     background: rgba(94, 99, 99, 0.7);
+
+//     opacity: 1;
+//     visibility: visible;
+//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .backdrop.is-hidden .modal {
+//     transform: opacity 0;
+// }
+
+// .backdrop.is-hidden {
+//     opacity: 0;
+//     visibility: hidden;
+//     pointer-events: none;
+// }
+
+// .modal {
+//     display: flex;
+//     flex-direction: column;
+//     padding: 40px;
+
+//     position: relative;
+//     width: 100%;
+//     height: 449px;
+//     border-radius: 30px;
+
+//     background-color: #FFE550;
+
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+// }
