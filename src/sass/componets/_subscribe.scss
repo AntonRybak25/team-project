@@ -1,6 +1,15 @@
 .subscribe{
-    width: 100%; 
-    
+  max-width: 480px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+     
+  }
+
+  @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+  }
 }
 .subscribe__container{ 
     display: inline-block;
@@ -16,6 +25,7 @@
   
     @media screen and (min-width: 1200px) {
       flex-basis: 656px;
+      margin-top: -40px
     }
   }
 
@@ -110,8 +120,10 @@
   }
 
   .banana-img-desktop{
+    margin-top: -100px;
     @media screen and (max-width: 1199px) {
         display: none;
+        
     }
   }
 
