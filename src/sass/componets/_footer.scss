@@ -19,16 +19,16 @@
     @media screen and (min-width:768px) {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-size: contain;
-        background-position: bottom center;
-        background-image: url(../images/footer/footerbcgr@1x_tablet.png);
+        background-size: 184px, 168px, 153px, 221px, 171px, 170px, 203px;
+        background-position: bottom left, bottom left 153px, bottom left 233px, bottom right 233px, bottom right 111px, bottom right, right top;
+        background-image: url(../images/footer/footerorange@1x_tablet.png), url(../images/footer/splashleft@1x_tablet.png), url(../images/footer/apple@1x_tablet.png), url(../images/footer/banana@1x_tablet.png), url(../images/footer/splashriht@1x_tablet.png), url(../images/footer/footerapple@1x_tablet.png), url(../images/footer/orange@1x_tablet.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/footer/footerbcgr@2x_tablet.png);
-        }  
+        background-image: url(../images/footer/footerorange@2x_tablet.png), url(../images/footer/splashleft@2x_tablet.png), url(../images/footer/apple@2x_tablet.png), url(../images/footer/banana@2x_tablet.png), url(../images/footer/splashriht@2x_tablet.png), url(../images/footer/footerapple@2x_tablet.png), url(../images/footer/orange@2x_tablet.png);
+        }
     }
 
     @media screen and (min-width: 1280px) {
-        background-size: 1280px;
+        background-size: contain;
         background-image: url(../images/footer/footerbcgr@1x_desktop.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
          background-image: url(../images/footer/footerbcgr@2x_desktop.png);
@@ -53,15 +53,6 @@
 }
 .logo--footer {
     margin-right: 81px;
-    @media screen and (min-width: 480px) {
-     margin-right: 180px;  
-    }
-    @media screen and (min-width:768px) {
-     margin-right: 78px;
-    }
-    @media screen and (min-width: 1280px) {
-        margin-right: 145px;
-    }
 }
 .footer-nav__list {
     display: flex;
@@ -74,15 +65,19 @@
        gap: 28px;
        margin-bottom: 0; 
     }
-    @media screen and (min-width: 1280px) {
-        margin-right: 210px;
-    }
 }
 .footer-nav__link {
+    padding: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: calc(16/14);
     color: #000000;
+
+    &:hover,
+    &:focus {
+      color: var(--green);
+      text-decoration: underline;
+    }
 }
 .subscribe-footer {
     position: relative;
@@ -91,31 +86,28 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: baseline;
-    gap: 20px;
 
     @media screen and (min-width:768px) {
-        flex-direction: row;
-        gap: 12px;
-        margin-bottom: 0; 
+        display: inline-block;   
     }
-    @media screen and (min-width:1200px) {
-        display: inline-block;
-        margin-right: 13px;
+    @media screen and (min-width:1280px) {
+        width: 410px;
+        margin-left: auto;
     }
    
 }
 .subscribe-footer__title {
-    @media screen and (min-width:768px) {
-        margin-right: 450px; 
-    }
-    @media screen and (min-width:1280px) {
-        margin-right: auto;
-        margin-bottom: 12px; 
-    }
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2C2C2C;
+    margin-bottom: 12px; 
+    
 }
 
 .subscribe-footer__input {
-   
+    margin-bottom: 20px;
     width: 100%;
     height: 42px;
     padding: 12px;
@@ -131,9 +123,8 @@
 
     @media screen and (min-width:768px) {
         width: 279px;
-    }
-    @media screen and (min-width:1280px) {
-        margin-right: 13px;    
+        margin-right: 13px;  
+        margin-bottom: 0;
     }
 
 &:hover,
@@ -169,11 +160,11 @@
 .warning-notfication {
     fill: #FF705D;
     position: absolute;
-    top: 75px;
+    top: 80px;
     left: 5px;
     opacity: 0;
     @media screen and (max-width:768px) {
-        top: 85px;
+        top: 76px;
     }
 }
 .warning-notfication {
@@ -195,14 +186,6 @@
     border-radius: 30px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    @media screen and (min-width:768px) {
-        margin-right: 100px;
-    }
-    @media screen and (min-width: 1280px) {
-        margin-right: auto;
-        margin-bottom: 12px;
-    }
-
 &:hover,
 &:active,
 &:focus {
@@ -214,6 +197,7 @@
     font-size: 10px;
     line-height: calc(12/10);
     color: var(--nav-link-color);
+    margin-top: 20px;
 
     @media screen and (min-width:768px) {
         font-size: 12px;
@@ -227,7 +211,6 @@
 }
 .footer-addinfo {
   
-
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
@@ -254,6 +237,7 @@
     text-decoration: underline;
 
     @media screen and (min-width:768px) {
+        padding: 10px;
         font-size: 12px;
         line-height: calc(14/12);
     }
