@@ -86,6 +86,8 @@
   justify-content: center;
 
   img {
+    width: 320px;
+
     border: 14px solid var(--default-yellow);
     border-radius: 50%;
     transition: border var(--timing-function);
@@ -95,6 +97,7 @@
     }
     border-radius: 50%;
     @media screen and(min-width: 1280px) {
+      width: 580px;
       border: 26px solid var(--default-yellow);
       &:hover,
       &:focus {
@@ -158,17 +161,3 @@
     font-size: 30px;
   }
 }
-// .iconVector {
-//   @media screen and(min-width: 1280px) {
-//     width: 17px;
-//     height: 29px;
-//   }
-// }
-
-// .swiper-pagination-bullet-active {
-//   // background-image: url(https://picsum.photos/200);
-//   // background-size: cover;
-//   // border-radius: unset;
-//   // width: 20px;
-//   // height: 20px;
-// }
