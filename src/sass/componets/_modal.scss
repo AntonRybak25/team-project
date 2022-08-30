@@ -1,0 +1,168 @@
+// Modal Form
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(94, 99, 99, 0.7);
+
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.form-modal.is-hidden {
+    transform: opacity 0;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 20px;
+
+    position: relative;
+    width: 100%;
+    height: 449px;
+    border-radius: 30px;
+
+    background-color: #FFE550;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+
+        text-align: center;
+
+        color: #2C2C2C;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 458px;
+        padding: 32px 32px;
+    }
+}
+
+.mailing {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.mailing-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+
+    &:nth-child(3) {
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2C2C2C;
+
+        margin: 0 12px 2px;
+    }
+}
+
+.field-input {
+    position: relative;
+
+    &__text {
+        width: 100%;
+        height: 48px;
+        padding: 14px 12px;
+
+        background: #FFFFFF;
+        border: 1px solid #7EB101;
+        box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 30px;
+
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            border: 1px solid rgba(18, 18, 18, 0.12);
+        }
+    }
+
+    &:focus-within>.field-input__text {
+        outline: 2px solid #7EB101;
+    }
+
+    ::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #C4C4C4;
+    }
+}
+
+.button-send__modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    width: 106px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: #BBF330;
+    }
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-close:hover {
+    fill: #7EB101;
+}
