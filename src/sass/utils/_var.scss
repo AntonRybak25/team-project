@@ -1,13 +1,15 @@
 :root {
-    --main-font: 'Roboto', sans-serif;
-    --main-txt: #2c2c2c;
-    --green: #bbf330;
-    --green-hover: #B5FF00;
-    --dark-green: #7eb101;
-    --white: #fefefe;
-    --default-yellow: #ffe550;
-    --shadow-fruit: radial-gradient(50% 50% at 50% 50%,
-                #2f583f 0%,
-                rgba(105, 105, 105, 0) 100%);
-    --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --main-font: 'Roboto', sans-serif;
+  --main-txt: #2c2c2c;
+  --green: #bbf330;
+  --green-hover: #b5ff00;
+  --dark-green: #7eb101;
+  --white: #fefefe;
+  --default-yellow: #ffe550;
+  --shadow-fruit: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
