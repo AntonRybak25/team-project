@@ -29,6 +29,7 @@
 
     @media screen and (min-width: 1280px) {
         background-size: contain;
+        background-position: center;
         background-image: url(../images/footer/footerbcgr@1x_desktop.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
          background-image: url(../images/footer/footerbcgr@2x_desktop.png);
