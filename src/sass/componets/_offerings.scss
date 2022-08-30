@@ -1,7 +1,9 @@
 .offerings__section {
-    max-width: 1280px;
-    margin: 0 auto;
+    padding-top: 41px;
+    padding-bottom: 60px;
     
+    margin: 0 auto;
+
     background-image:
         url(../images/offerings/Rectangle\ @1x_sm.png);
 
@@ -12,7 +14,14 @@
             url(../images/offerings/Rectangle\ @2x_sm.png);
     }
 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+
     @media screen and(min-width: 768px) {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        
         background-image:
             url(../images/offerings/Rectangle\ @1x_md.png);
 
@@ -24,6 +33,9 @@
         }
 
         @media screen and(min-width: 1280px) {
+            padding-top: 177px;
+            padding-bottom: 43px;
+
             background-image:
                 url(../images/offerings/Rectangle\ @1x_lg.png);
 
@@ -37,25 +49,16 @@
     }
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: top;
-
-    padding-bottom: 60px;
 }
 
 .offerings__container {
-    padding-top: 41px;
-
     @media screen and (min-width: 1280px) {
         display: flex;
-        padding-top: 260px;
         gap: 90px;
         margin: 0 auto;
         align-items: center;
-    }
-
-    @media screen and(min-width: 768px) and (max-width: 1280px) {
-        padding-top: 150px;
     }
 }
 
@@ -74,136 +77,35 @@
 
     margin: 0 auto;
 
-    @media screen and(min-width: 768px) and (max-width: 1280px) {
-        margin: 0;
-    }
-
-    &__background {
-        position: absolute;
-        z-index: 1;
-        bottom: 12px;
-
-        width: 255px;
-        height: 255px;
-        border-radius: 50%;
-        background-color: #FEFEFE;
-
-        outline: 3px solid rgba(255, 255, 255, 0.5);
-        outline-offset: 12px;
-    }
-
-    // &__border {
-    //     position: absolute;
-    //     z-index: 2;
-
-    //     display: flex;
-    //     width: 280px;
-    //     height: 280px;
-    //     align-items: center;
-    //     justify-content: center;
-
-    //     border-radius: 50%;
-    //     border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
-    // }
-
-    &__apple {
-        width: 201px;
-        height: 255px;
-        margin-bottom: 53px;
-
-        position: absolute;
-        z-index: 4;
-
-        background-image: url(../images/offerings/aple@1x_sm.png);
-
+    background-image: url(../images/offerings/Apple@1x_sm.png);
+    
         background-repeat: no-repeat;
-
-        @media (min-device-pixel-ratio: 2),
+        background-size: 100%;
+    
+    @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image:
-                url(../images/offerings/aple@2x_sm.png);
+        background-image:
+            url(../images/offerings/Apple@2x_sm.png);
         }
 
-        background-size: 100%;
-    }
-
-    &__shadow {
-        width: 128px;
-        height: 44px;
-        margin-bottom: 38px;
-    
-        background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-        filter: blur(16.8764px);
-    
-        position: absolute;
-        z-index: 3;
+    @media screen and(min-width: 768px) and (max-width: 1280px) {
+        margin: 0;
     }
 
     @media screen and (min-width: 768px) {
         width: 357px;
         height: 394px;
 
-        &__background {
-            position: absolute;
-            z-index: 1;
-            bottom: 16px;
-
-            width: 325px;
-            height: 325px;
-            border-radius: 50%;
-            background-color: #FEFEFE;
-
-            outline: 3px solid rgba(255, 255, 255, 0.5);
-            outline-offset: 16px;
-        }
-
-        // &__border {
-        //     position: absolute;
-        //     z-index: 2;
-
-        //     display: flex;
-        //     width: 357px;
-        //     height: 357px;
-        //     align-items: center;
-        //     justify-content: center;
-
-        //     border-radius: 50%;
-        //     border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
-        // }
-
-        &__apple {
-            width: 257px;
-            height: 325px;
-            margin-bottom: 68px;
-
-            position: absolute;
-            z-index: 4;
-
-            background-image: url(../images/offerings/aple@1x_md.png);
-
-            background-repeat: no-repeat;
-
-            @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-                background-image:
-                    url(../images/offerings/aple@2x_md.png);
-            }
-
-            background-size: 100%;
-        }
-
-        &__shadow {
-            width: 164px;
-            height: 56px;
-            margin-bottom: 49px;
-
-            background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-                filter: blur(16.8764px);
-
-            position: absolute;
-            z-index: 3;
+        background-image: url(../images/offerings/Apple@1x_md_.png);
+        
+        background-repeat: no-repeat;
+        
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/offerings/Apple@2x_md_.png);
         }
     }
 
@@ -211,73 +113,24 @@
         width: 550px;
         height: 604px;
 
-        &__background {
-            position: absolute;
-            z-index: 1;
-            bottom: 24px;
-
-            width: 502px;
-            height: 502px;
-            border-radius: 50%;
-            background-color: #FEFEFE;
-
-            outline: 3px solid rgba(255, 255, 255, 0.5);
-            outline-offset: 24px;
-        }
-
-        // &__border {
-        //     position: absolute;
-        //     z-index: 2;
-
-        //     display: flex;
-        //     width: 550px;
-        //     height: 550px;
-        //     align-items: center;
-        //     justify-content: center;
-
-        //     border-radius: 50%;
-        //     border: 3px solid rgba($color: #FFFFFF, $alpha: 0.5);
-        // }
-
-        &__apple {
-            width: 396px;
-            height: 502px;
-            margin-bottom: 102px;
-
-            position: absolute;
-            z-index: 4;
-
-            background-image: url(../images/offerings/aple@1x_lg.png);
-
-            background-repeat: no-repeat;
-
-            @media (min-device-pixel-ratio: 2),
+        background-image: url(../images/offerings/Group82@1x_lg.png);
+        
+        background-repeat: no-repeat;
+        
+        @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image:
-                    url(../images/offerings/aple@2x_lg.png);
+            background-image:
+                url(../images/offerings/Group82@2x_lg.png);
             }
-
-            background-size: 100%;
         }
-
-        &__shadow {
-            width: 252px;
-            height: 87px;
-            margin-bottom: 75px;
-
-            background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-                filter: blur(16.8764px);
-
-            position: absolute;
-            z-index: 3;
-        }
-    }
 }
 
 .apple-tablet-md {
-    @media screen and (max-width: 768px), (min-width: 1280px) {
-        display: none;
+
+    @media screen and (max-width: 768px),
+    (min-width: 1280px) {
+    display: none;
     }
 
     width: 166px;
@@ -288,19 +141,21 @@
     background-image: url(../images/offerings/Apple@1x_md.png);
 
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image:
-                url(../images/offerings/Apple@2x_md.png);
-        }
-    
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/offerings/Apple@2x_md.png);
+    }
+
     background-size: 100%;
 }
 
 .apple-tablet-sm {
-    @media screen and (max-width: 768px), (min-width: 1280px) {
-            display: none;
-        }
+
+    @media screen and (max-width: 768px),
+    (min-width: 1280px) {
+    display: none;
+    }
 
     width: 108px;
     height: 136px;
@@ -308,13 +163,13 @@
     margin-bottom: 68px;
 
     background-image: url(../images/offerings/Apple@1x_md_1.png);
-    
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image:
-                url(../images/offerings/Apple@2x_md_1.png);
-        }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image:
+            url(../images/offerings/Apple@2x_md_1.png);
+    }
 
     background-size: 100%;
 }
@@ -325,9 +180,10 @@
     padding-top: 60px;
     gap: 28px;
 
-    @media screen and (min-width: 1280px) {
-        padding: 0;
-    }
+    @media screen and (min-width: 768px) {
+            gap: 40px;
+            padding: 0;
+        }
 }
 
 .offerings {
@@ -385,7 +241,36 @@
     }
 }
 
-.special-item {
+.special-delive__title::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../images/offerings/IconDeliv.svg);
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 8px;
+}
+
+.special-order__title::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../images/offerings/IconOrder.svg);
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 8px;
+}
+
+.special-delive,
+.special-order {
     margin-bottom: 28px;
 
     &:last-child {
@@ -395,28 +280,6 @@
     @media screen and (min-width: 768px) {
         width: 252px;
         margin: 0;
-    }
-
-    &__link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-
-        background-color: #FEFEFE;
-
-        margin-bottom: 8px;
-    }
-
-    &__icon {
-        fill: #7EB101;
-        }
-
-    &__icon:hover { 
-        fill: #597D00;
-        transition: fill, 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__title {
@@ -478,7 +341,7 @@
 
     position: absolute;
     width: 100px;
-    height: 33px;
+    height: 40px;
 
     border: none;
 
@@ -488,51 +351,3 @@
         display: none;
     }
 }
-
-// Modal Form
-
-// .backdrop {
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     z-index: 100;
-
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-
-//     width: 100%;
-//     height: 100%;
-
-//     background: rgba(94, 99, 99, 0.7);
-
-//     opacity: 1;
-//     visibility: visible;
-//     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
-// .backdrop.is-hidden .modal {
-//     transform: opacity 0;
-// }
-
-// .backdrop.is-hidden {
-//     opacity: 0;
-//     visibility: hidden;
-//     pointer-events: none;
-// }
-
-// .modal {
-//     display: flex;
-//     flex-direction: column;
-//     padding: 40px;
-
-//     position: relative;
-//     width: 100%;
-//     height: 449px;
-//     border-radius: 30px;
-
-//     background-color: #FFE550;
-
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-// }
