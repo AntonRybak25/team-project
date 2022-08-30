@@ -9,7 +9,7 @@
     padding-top: 159px;
   }
 }
-.pagaHero {
+.container {
   position: relative;
 }
 
@@ -26,7 +26,7 @@
     line-height: 120%;
   }
   @media screen and(min-width: 1280px) {
-    width: 502px;
+    max-width: 502px;
     font-size: 48px;
   }
 }
@@ -36,13 +36,13 @@
   font-size: 14px;
   line-height: 150%;
   @media screen and(min-width: 768px) {
-    width: 336px;
+    max-width: 336px;
     margin-bottom: 40px;
 
     font-size: 16px;
   }
   @media screen and(min-width: 1280px) {
-    width: 502px;
+    max-width: 502px;
   }
 }
 .button {
@@ -55,119 +55,109 @@
 
   font-size: 14px;
   line-height: 150%;
-
+  transition: background var(--timing-function);
   &:hover,
   &:focus {
     background: var(--green-hover);
   }
 }
 
-.slider {
+.swiper {
   display: none;
 
   @media screen and(min-width:768px) {
     position: absolute;
     display: flex;
+
     top: 89px;
     right: 0px;
 
-    width: 320px;
-    height: 320px;
+    max-width: 336px;
+  }
+  @media screen and(min-width: 1280px) {
+    top: -145px;
+    max-width: 608px;
+  }
+}
 
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 320px;
+    border-radius: 50%;
     border: 14px solid var(--default-yellow);
     border-radius: 50%;
-
+    transition: border var(--timing-function);
     &:hover,
     &:focus {
       border: 14px solid var(--green);
     }
-    &__img {
-      border-radius: 50%;
-    }
 
-    &__iconVectorLeft {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 50%;
-      left: -25px;
-      transform: translateY(-50%);
-      z-index: 14;
-      width: 34px;
-      height: 28px;
-      padding: 0;
-
-      border: none;
-      background: var(--white);
-
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-      border-radius: 4px;
-
-      cursor: pointer;
+    @media screen and(min-width: 1280px) {
+      max-width: 580px;
+      border: 26px solid var(--default-yellow);
       &:hover,
       &:focus {
-        stroke: var(--dark-green);
+        border: 26px solid var(--green);
       }
-    }
-
-    &__iconVectorRight {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      top: 50%;
-      right: -25px;
-      transform: translateY(-50%);
-      z-index: 15;
-      width: 34px;
-      height: 28px;
-      padding: 0;
-      cursor: pointer;
-
-      border: none;
-      background: var(--white);
-
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-      border-radius: 4px;
-      &:hover,
-      &:focus {
-        stroke: var(--dark-green);
-      }
-    }
-  }
-
-  @media screen and(min-width: 1280px) {
-    top: -145px;
-    width: 580px;
-    height: 580px;
-
-    border: 26px solid var(--default-yellow);
-
-    &:hover,
-    &:focus {
-      border: 26px solid var(--green);
-    }
-
-    &__iconVectorLeft {
-      width: 48px;
-      height: 40px;
-
-      left: -40px;
-    }
-
-    &__iconVectorRight {
-      width: 48px;
-      height: 40px;
-
-      right: -40px;
     }
   }
 }
-.iconVector {
+.swiper-button-next {
+  right: 0;
+
+  width: 34px;
+  height: 28px;
+
+  color: currentColor;
+  border: none;
+  background: var(--white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  transition: color var(--timing-function);
+
+  cursor: pointer;
+  &:hover,
+  s &:focus {
+    color: var(--dark-green);
+  }
   @media screen and(min-width: 1280px) {
-    width: 17px;
-    height: 29px;
+    width: 48px;
+    height: 40px;
+  }
+}
+.swiper-button-prev {
+  left: 0;
+
+  width: 34px;
+  height: 28px;
+  color: currentColor;
+  cursor: pointer;
+
+  border: none;
+  background: var(--white);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+
+  transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--dark-green);
+  }
+  @media screen and(min-width: 1280px) {
+    width: 48px;
+    height: 40px;
+  }
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 21px;
+  @media screen and(min-width: 1280px) {
+    font-size: 30px;
   }
 }
