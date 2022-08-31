@@ -71,8 +71,11 @@
 
     top: 89px;
     right: 0px;
-
     max-width: 336px;
+
+    border-radius: 50%;
+    border: 14px solid var(--default-yellow);
+    // border-width: 320px;
   }
   @media screen and(min-width: 1280px) {
     top: -145px;
@@ -84,30 +87,37 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // border: 14px solid var(--green);
 
-  img {
-    max-width: 320px;
-    border-radius: 50%;
-    border: 14px solid var(--default-yellow);
-    border-radius: 50%;
-    transition: border var(--timing-function);
-    &:hover,
-    &:focus {
-      border: 14px solid var(--green);
-    }
+  // border-radius: 50%;
+  // img {
+  //   max-width: 320px;
 
-    @media screen and(min-width: 1280px) {
-      max-width: 580px;
-      border: 26px solid var(--default-yellow);
-      &:hover,
-      &:focus {
-        border: 26px solid var(--green);
-      }
-    }
-  }
+  //
+
+  //
+  // }
+}
+.slider__img {
+  border-radius: 50%;
+  // border: 14px solid var(--default-yellow);
+
+  // transition: border var(--timing-function);
+  // &:hover,
+  // &:focus {
+  //   border: 14px solid var(--green);
+  // }
+  // @media screen and(min-width: 1280px) {
+
+  //   border: 26px solid var(--default-yellow);
+  //   &:hover,
+  //   &:focus {
+  //     border: 26px solid var(--green);
+  //   }
+  // }
 }
 .swiper-button-next {
-  right: 0;
+  right: 0px;
 
   width: 34px;
   height: 28px;
