@@ -18,6 +18,8 @@
 
   font-size: 28px;
   line-height: 1.17;
+  background-image: url(https://picsum.photos/200);
+  // background-size: cover;
 
   @media screen and(min-width: 768px) {
     margin-bottom: 44px;
@@ -70,11 +72,13 @@
     display: flex;
 
     top: 89px;
-    right: 0px;
+    right: 0;
     max-width: 336px;
+    min-height: 320px;
 
-    // border-radius: 50%;
+    border-radius: 50%;
     // border: 14px solid var(--default-yellow);
+    background-image: url('../images/hero/ellips.svg');
   }
   @media screen and(min-width: 1280px) {
     top: -145px;
@@ -99,20 +103,20 @@
 }
 .slider__img {
   border-radius: 50%;
-  border: 14px solid var(--default-yellow);
+  // border: 14px solid var(--default-yellow);
 
-  transition: border var(--timing-function);
-  &:hover,
-  &:focus {
-    border: 14px solid var(--green);
-  }
-  @media screen and(min-width: 1280px) {
-    border: 26px solid var(--default-yellow);
-    &:hover,
-    &:focus {
-      border: 26px solid var(--green);
-    }
-  }
+  // transition: border var(--timing-function);
+  // &:hover,
+  // &:focus {
+  //   border: 14px solid var(--green);
+  // }
+  // @media screen and(min-width: 1280px) {
+  //   border: 26px solid var(--default-yellow);
+  //   &:hover,
+  //   &:focus {
+  //     border: 26px solid var(--green);
+  //   }
+  // }
 }
 .swiper-button-next {
   right: 0px;
