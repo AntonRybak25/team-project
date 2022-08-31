@@ -97,9 +97,13 @@
   }
 
   .menu-btn {
-   position: relative;
+
     margin-left: auto;
-    display: inline-flex;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
     align-items: center;
     justify-content: center;
   
@@ -114,37 +118,16 @@
   
     cursor: pointer;
   
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
+   
   }
 
-  /*
-  .menu-btn .icon-menu{
-    display: block;
-  }
-  .menu-btn .icon-cross{
-    display: none;
-  }
 
-  .menu-btn.is-open .icon-cross {
-    display: block;
-  }
-
-  .menu-btn.is-open .icon-menu {
-    display: none;
-  }
-
-  .icon-cross{
-    padding-top: 50px;
-  }
-*/
   .menu-container{
-    position: relative;
+  position: relative;
   display: none;
   position: absolute;
   top: 0;
- right: 0;
+  right: 0;
   width: 130px;
   height: 255px;
 
