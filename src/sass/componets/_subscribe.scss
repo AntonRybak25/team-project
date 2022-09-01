@@ -1,7 +1,8 @@
 .subscribe{
  
   max-width: 480px;
-    margin: 0 auto;
+  margin: 0 auto;
+  padding-bottom: 64px;
 
     @media screen and (min-width: 768px) {
       max-width: 768px;
