@@ -1,3 +1,5 @@
+/** @format */
+
 .hero {
   padding-top: 60px;
   padding-bottom: 50px;
@@ -12,7 +14,11 @@
 .container {
   position: relative;
 }
-
+.info {
+  @media screen and(min-width: 768px) {
+    max-width: 532px;
+  }
+}
 .title {
   margin-bottom: 28px;
 
@@ -26,7 +32,6 @@
     line-height: 120%;
   }
   @media screen and(min-width: 1280px) {
-    max-width: 502px;
     font-size: 48px;
   }
 }
@@ -35,6 +40,7 @@
 
   font-size: 14px;
   line-height: 150%;
+
   @media screen and(min-width: 768px) {
     max-width: 336px;
     margin-bottom: 40px;
@@ -42,7 +48,7 @@
     font-size: 16px;
   }
   @media screen and(min-width: 1280px) {
-    max-width: 502px;
+    max-width: inherit;
   }
 }
 .button {
@@ -67,16 +73,28 @@
 
   @media screen and(min-width:768px) {
     position: absolute;
-    display: flex;
+    display: block;
 
     top: 89px;
-    right: 0px;
-
-    max-width: 336px;
+    right: 40px;
+    max-width: 320px;
+    min-height: 320px;
+    border-radius: 50%;
+    border: 14px solid var(--default-yellow);
+    &:hover,
+    &:focus {
+      border: 14px solid var(--green);
+    }
   }
   @media screen and(min-width: 1280px) {
     top: -145px;
-    max-width: 608px;
+    right: 32px;
+    max-width: 580px;
+    border: 26px solid var(--default-yellow);
+    &:hover,
+    &:focus {
+      border: 26px solid var(--green);
+    }
   }
 }
 
@@ -84,72 +102,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  img {
-    max-width: 320px;
-    border-radius: 50%;
-    border: 14px solid var(--default-yellow);
-    border-radius: 50%;
-    transition: border var(--timing-function);
-    &:hover,
-    &:focus {
-      border: 14px solid var(--green);
-    }
-
-    @media screen and(min-width: 1280px) {
-      max-width: 580px;
-      border: 26px solid var(--default-yellow);
-      &:hover,
-      &:focus {
-        border: 26px solid var(--green);
-      }
-    }
-  }
+}
+.slider__img {
+  border-radius: 50%;
 }
 .swiper-button-next {
-  right: 0;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: flex;
+    top: 255px;
+    right: 32px;
 
-  width: 34px;
-  height: 28px;
+    width: 34px;
+    height: 28px;
 
-  color: currentColor;
-  border: none;
-  background: var(--white);
+    color: currentColor;
+    border: none;
+    background: var(--white);
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
-  transition: color var(--timing-function);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    transition: color var(--timing-function);
 
-  cursor: pointer;
-  &:hover,
-  s &:focus {
-    color: var(--dark-green);
-  }
-  @media screen and(min-width: 1280px) {
-    width: 48px;
-    height: 40px;
+    cursor: pointer;
+    &:hover,
+    s &:focus {
+      color: var(--dark-green);
+    }
+    @media screen and(min-width: 1280px) {
+      right: 16px;
+      top: 50%;
+      width: 48px;
+      height: 40px;
+    }
   }
 }
 .swiper-button-prev {
-  left: 0;
+  display: none;
+  @media screen and(min-width:768px) {
+    display: flex;
+    left: 400px;
+    top: 255px;
 
-  width: 34px;
-  height: 28px;
-  color: currentColor;
-  cursor: pointer;
+    width: 34px;
+    height: 28px;
+    color: currentColor;
+    cursor: pointer;
 
-  border: none;
-  background: var(--white);
+    border: none;
+    background: var(--white);
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
-  border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
 
-  transition: color var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--dark-green);
+    transition: color var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--dark-green);
+    }
   }
   @media screen and(min-width: 1280px) {
+    top: 50%;
+    left: 656px;
     width: 48px;
     height: 40px;
   }
