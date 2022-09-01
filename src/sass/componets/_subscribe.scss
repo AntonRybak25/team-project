@@ -26,11 +26,16 @@
 
 .subscribe-form {
   position: relative;
-  display: block;
+  display: inline-block;
   margin-top: 17px;
 
   @media screen and (min-width: 768px) {
       display: inline-block;}
+
+      @media screen and (min-width: 1280px) {
+        margin-top: -60px;;
+      }
+  
 
 }
 
@@ -109,14 +114,19 @@ opacity: 1;
 .subscribe-warning-notfication {
   fill: #FF705D;
   position: absolute;
-  margin-top: 50px;
+ 
   left: 5px;
   opacity: 0;
 
 }
+
+.subscribe-warning-icon{
+margin-top: 50px;
+}
 .subscribe-warning-notfication {
 
   left: 22px;
+  margin-top: -15px;
 }
 
 
