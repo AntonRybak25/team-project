@@ -1,5 +1,6 @@
 @import './base/base';
 @import './base/placeholders';
+@import './utils/var';
 @import './base/reset';
 @import './common';
 @import './componets/header';
@@ -10,6 +11,5 @@
 @import './componets/subscribe';
 @import './componets/footer';
 @import './componets/modal';
-@import './utils/var';
-@import './utils/hidden'
 
+@import './utils/hidden';
