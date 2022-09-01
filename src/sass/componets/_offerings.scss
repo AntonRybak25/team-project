@@ -1,7 +1,7 @@
 .offerings__section {
     padding-top: 41px;
     padding-bottom: 60px;
-    
+
     margin: 0 auto;
 
     background-image:
@@ -15,13 +15,13 @@
     }
 
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: top;
 
     @media screen and(min-width: 768px) {
         padding-top: 150px;
         padding-bottom: 100px;
-        
+
         background-image:
             url(../images/offerings/Rectangle\ @1x_md.png);
 
@@ -47,10 +47,6 @@
             }
         }
     }
-
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: top;
 }
 
 .offerings__container {
@@ -78,16 +74,16 @@
     margin: 0 auto;
 
     background-image: url(../images/offerings/Apple@1x_sm.png);
-    
-        background-repeat: no-repeat;
-        background-size: 100%;
-    
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+
     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
         background-image:
             url(../images/offerings/Apple@2x_sm.png);
-        }
+    }
 
     @media screen and(min-width: 768px) and (max-width: 1280px) {
         margin: 0;
@@ -98,9 +94,9 @@
         height: 394px;
 
         background-image: url(../images/offerings/Apple@1x_md_.png);
-        
+
         background-repeat: no-repeat;
-        
+
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -114,23 +110,23 @@
         height: 604px;
 
         background-image: url(../images/offerings/Group82@1x_lg.png);
-        
+
         background-repeat: no-repeat;
-        
+
         @media (min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
             background-image:
                 url(../images/offerings/Group82@2x_lg.png);
-            }
         }
+    }
 }
 
 .apple-tablet-md {
 
     @media screen and (max-width: 768px),
     (min-width: 1280px) {
-    display: none;
+        display: none;
     }
 
     width: 166px;
@@ -154,7 +150,7 @@
 
     @media screen and (max-width: 768px),
     (min-width: 1280px) {
-    display: none;
+        display: none;
     }
 
     width: 108px;
@@ -181,9 +177,8 @@
     gap: 28px;
 
     @media screen and (min-width: 768px) {
-            gap: 40px;
-            padding-top: 60px;
-        }
+        gap: 40px;
+    }
 }
 
 .offerings {
@@ -332,22 +327,56 @@
     }
 }
 
-.button-more {
+.button-list__more {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 6px 0px;
-
-    position: absolute;
-    width: 100px;
-    height: 40px;
-
-    border: none;
-
-    background-color: inherit;
+    align-content: center;
+    flex-direction: column;
 
     @media screen and (min-width: 1280px) {
         display: none;
     }
+}
+
+.read-more {
+    padding: 10px 10px;
+    max-width: 110px;
+
+    cursor: pointer;
+
+    &:hover {
+        color: #597D00;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+p {
+    margin: 10px 0;
+}
+
+.extra-text {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+
+    color: #2C2C2C;
+
+    padding-left: 10px;
+
+}
+
+#read-more:checked~.extra-text {
+    display: block;
+}
+
+.less {
+    display: none;
+}
+
+#read-more:checked~.read-more .more {
+    display: none;
+}
+
+#read-more:checked~.read-more .less {
+    display: inline-block;
 }
