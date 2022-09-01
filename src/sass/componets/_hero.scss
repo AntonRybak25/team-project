@@ -19,7 +19,6 @@
   font-size: 28px;
   line-height: 1.17;
 
-
   @media screen and(min-width: 768px) {
     margin-bottom: 44px;
 
@@ -68,54 +67,38 @@
 
   @media screen and(min-width:768px) {
     position: absolute;
-    display: flex;
+    display: block;
 
     top: 89px;
     right: 0;
-    max-width: 336px;
+    max-width: 320px;
     min-height: 320px;
-
     border-radius: 50%;
-    // border: 14px solid var(--default-yellow);
-    background-image: url('../images/hero/ellips.svg');
+    border: 14px solid var(--default-yellow);
+    &:hover,
+    &:focus {
+      border: 14px solid var(--green);
+    }
   }
   @media screen and(min-width: 1280px) {
     top: -145px;
-    max-width: 608px;
+    max-width: 580px;
+    border: 26px solid var(--default-yellow);
+    &:hover,
+    &:focus {
+      border: 26px solid var(--green);
+    }
   }
 }
 
 .swiper-slide {
+  position: static;
   display: flex;
   align-items: center;
   justify-content: center;
-  // border: 14px solid var(--green);
-
-  // border-radius: 50%;
-  // img {
-  //   max-width: 320px;
-
-  //
-
-  //
-  // }
 }
 .slider__img {
   border-radius: 50%;
-  // border: 14px solid var(--default-yellow);
-
-  // transition: border var(--timing-function);
-  // &:hover,
-  // &:focus {
-  //   border: 14px solid var(--green);
-  // }
-  // @media screen and(min-width: 1280px) {
-  //   border: 26px solid var(--default-yellow);
-  //   &:hover,
-  //   &:focus {
-  //     border: 26px solid var(--green);
-  //   }
-  // }
 }
 .swiper-button-next {
   right: 0px;
@@ -142,7 +125,7 @@
   }
 }
 .swiper-button-prev {
-  left: 0;
+  left: -20px;
 
   width: 34px;
   height: 28px;
