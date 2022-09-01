@@ -34,12 +34,17 @@
 
       <ul class="button-list list">
         <li class="button-list__order">
-          <button type="submit" class="button-order" data-menu-open>
+          <button type="submit" class="button-order" data-modal-open>
             Order Now
           </button>
         </li>
         <li class="button-list__more">
-          <button type="submit" class="button-more">Read More ></button>
+            <input type="checkbox" id="read-more" hidden="">
+            <p class="extra-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sed nihil provident corporis cum
+              numquam
+              accusamus. Dignissimos, dolores vitae voluptate, quam, neque provident impedit suscipit molestiae facilis
+              dolorum fugit deleniti.</p>
+            <label for="read-more" class="read-more">Read <span class="more">more ></span><span class="less">less</span></label>
         </li>
       </ul>
     </div>
@@ -47,7 +52,7 @@
 </section>
 
 <!-- Modal form -->
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <h2 class="modal__title">Order Form</h2>
     <form class="form" autocomplete="off">
@@ -67,7 +72,7 @@
         <div class="mailing-field">
           <label for="mail" class="mailing-field__text">E-mail</label>
           <div class="field-input">
-            <input class="field-input__text" type="email" name="mail" id="modal-mail" placeholder="example@gmail.com" />
+            <input class="field-input__text" type="email" name="mail" id="mail" placeholder="example@gmail.com" />
           </div>
         </div>
         <div class="button-send">
@@ -82,4 +87,4 @@
     </form>
   </div>
 </div>
-<script src="./modal.js"></script> -->
+<script src="./modal.js"></script>
